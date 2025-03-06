@@ -16,4 +16,4 @@ A Flutter project that demonstrates a visually appealing user interface. The UI 
 
 ## Screenshots
 
-![App Screenshot](screenshot.png)
+![App Screenshot](Screenshot.png)
