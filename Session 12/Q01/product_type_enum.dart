@@ -1,0 +1,4 @@
+enum productType {
+  Physical,
+  Digital,
+}
