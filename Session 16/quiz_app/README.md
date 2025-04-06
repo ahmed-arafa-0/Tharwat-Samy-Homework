@@ -1,16 +1,25 @@
-# quiz_app
+# Session 15 Flutter Assignment
 
-A new Flutter project.
+# **Quiz App**
 
-## Getting Started
+This Flutter project is an interactive demo Quiz application.
 
-This project is a starting point for a Flutter application.
+## **Features**
 
-A few resources to get you started if this is your first Flutter project:
+- **Home Screen** .
+- **Quiz Screen** Some Question with Choices to be choosen by the user.
+- **Result Screen** Display the result of the Quiz answer by the user.
+- **Dynamic UI Changes:**
+  - **Page View**
+- **Elegant UI Design:**
+  - Rounded buttons with icons for better usability.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+<p align="center">
+  <img src="Screenshots/1.png" width="24%" alt="Home Screen">
+  <img src="Screenshots/2.png" width="24%" alt="Quiz Screen 01">
+  <img src="Screenshots/3.png" width="24%" alt="Quiz Screen 04">
+  <img src="Screenshots/4.png" width="24%" alt="Result Screen">
+</p>
