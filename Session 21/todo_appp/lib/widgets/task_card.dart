@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_appp/models/task_model.dart';
+
+import '../cubits/tasks_cubit/task_cubit.dart';
 
 class TaskCard extends StatelessWidget {
   final TaskModel task;
@@ -12,7 +15,9 @@ class TaskCard extends StatelessWidget {
       child: Card(
         child: ListTile(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              BlocProvider.of<TaskCubit>(context).toggleTask(text: task.text);
+            },
             icon:
                 task.isCompleted
                     ? Icon(Icons.check_box)
@@ -28,7 +33,12 @@ class TaskCard extends StatelessWidget {
             ),
           ),
           subtitle: Text(task.date),
-          trailing: IconButton(onPressed: () {}, icon: Icon(Icons.delete)),
+          trailing: IconButton(
+            onPressed: () {
+              BlocProvider.of<TaskCubit>(context).removeTask(text: task.text);
+            },
+            icon: Icon(Icons.delete),
+          ),
         ),
       ),
     );

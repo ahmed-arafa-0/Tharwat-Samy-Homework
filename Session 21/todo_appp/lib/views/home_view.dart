@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_appp/cubits/tasks_cubit/task_cubit.dart';
+import 'package:todo_appp/styles/color_styles.dart';
 import 'package:todo_appp/widgets/add_task_section.dart';
 import 'package:todo_appp/widgets/task_view_body.dart';
 
@@ -13,7 +14,7 @@ class HomeView extends StatelessWidget {
       create: (context) => TaskCubit(),
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF9FF0E3),
+          backgroundColor: ColorStyles.primatyColor,
           title: Text(
             'My Tasks',
             style: TextStyle(fontWeight: FontWeight.bold),
